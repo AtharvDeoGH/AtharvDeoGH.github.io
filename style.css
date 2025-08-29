@@ -35,7 +35,6 @@ a:hover { color: grey; text-decoration: underline; text-underline-offset: 1rem; 
 section { padding-top: 4vh; height: 96vh; margin: 0 10rem; box-sizing: border-box; min-height: fit-content; }
 .section-container { display: flex; }
 
-/* PROFILE (text only, centered) */
 #profile { display: flex; justify-content: center; gap: 8rem; height: 80vh; }
 .section__pic-container { display: flex; height: 400px; width: 400px; margin: auto 0; }
 .section__text { align-self: center; text-align: center; }
@@ -74,7 +73,6 @@ section { padding-top: 4vh; height: 96vh; margin: 0 10rem; box-sizing: border-bo
 .section-container { gap: 4rem; height: 80%; }
 .section__pic__container { height: 400px; width: 400px; margin: auto 0; }
 
-/* ===== EXPERIENCE (3 columns, tighter) ===== */
 #experience { position: relative; padding: 2rem 1rem; margin: 0 auto; height: auto; }
 #experience .experience-details-container { display: flex; justify-content: center; flex-direction: column; max-width: 1200px; margin: 0 auto; }
 .experience-sub-title { color: rgb(85, 85, 85); font-weight: 600; font-size: 1.5rem; margin-bottom: 1rem; }
@@ -82,19 +80,19 @@ section { padding-top: 4vh; height: 96vh; margin: 0 10rem; box-sizing: border-bo
 #experience .about-containers {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;               /* tighter gaps */
+  gap: 1.25rem;             
   align-items: stretch;
 }
 
 #experience .details-container {
-  padding: 1rem;              /* tighter card padding */
+  padding: 1rem;             
   border-radius: 1rem;
 }
 
 #experience .article-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;                  /* tighter item spacing */
+  gap: 1rem;              
   justify-content: flex-start;
   text-align: initial;
 }
@@ -102,7 +100,6 @@ section { padding-top: 4vh; height: 96vh; margin: 0 10rem; box-sizing: border-bo
 article { display: flex; width: 10rem; justify-content: space-around; gap: 0.5rem; }
 article .icon { cursor: default; }
 
-/* Responsive fallbacks for Experience */
 @media (max-width: 1024px) {
   #experience .about-containers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -110,7 +107,6 @@ article .icon { cursor: default; }
   #experience .about-containers { grid-template-columns: 1fr; }
 }
 
-/* ===== PROJECTS ===== */
 #projects { position: relative; padding: 2rem 1rem; }
 #projects .experience-details-container { max-width: 1200px; margin: 0 auto; }
 #projects .about-containers {
@@ -134,7 +130,6 @@ article .icon { cursor: default; }
 .btn-container { margin-top: auto; display: flex; gap: 1rem; justify-content: space-between; }
 .project-btn { color: #000; border-color: rgb(163,163,163); }
 
-/* Responsive for Projects */
 @media (max-width: 1024px) {
   #projects .about-containers { grid-template-columns: repeat(2, 1fr); }
 }
@@ -158,24 +153,22 @@ article .icon { cursor: default; }
 footer { height: 26vh; margin: 0 1rem; }
 footer p { text-align: center; }
 
-/* HERO tweaks to ensure centered text layout if any image markup remains */
 section#profile { display: flex; align-items: center; justify-content: center; text-align: center; min-height: 85vh; padding: 4rem 1rem; gap: 0; }
 section#profile .section__pic-container { display: none !important; }
 section#profile .section__text { max-width: 720px; margin: 0 auto; }
 #profile .btn-container, #profile #socials-container { display: flex; justify-content: center; gap: 1rem; }
 
-/* ---- Arrows: same spot (bottom-center) on every section ---- */
 #about, #experience, #projects {
-  position: relative;          /* anchor for the arrow */
-  padding-bottom: 5rem;        /* keeps content away from the arrow */
+  position: relative;         
+  padding-bottom: 5rem;      
 }
 
 .icon.arrow{
   position: absolute !important;
   left: 50%;
-  transform: translateX(-50%); /* perfect horizontal centering */
-  bottom: 1.25rem;             /* same vertical offset on all pages */
-  right: auto !important;      /* neutralize old 'right: -5rem' rule */
+  transform: translateX(-50%); 
+  bottom: 1.25rem;           
+  right: auto !important;    
   width: 2.25rem;
   height: auto;
   z-index: 30;
