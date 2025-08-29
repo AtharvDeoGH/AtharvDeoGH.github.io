@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Portfolio</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="togglemenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="togglemenu()">About</a></li>
+        <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+        <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+        <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (image removed, text centered) -->
+  <section id="profile">
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title">Atharv Vinay Deo</h1>
+      <p class="section__text__p2">Data Analyst</p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('Atharv Vinay Deo.pdf')">
+          Download Resume
+        </button>
+        <button class="btn btn-color-1" onclick="window.location.href='#contact'">
+          Contact Information
+        </button>
+      </div>
+
+      <div id="socials-container">
+        <img src="linkedin.png" alt="My LinkedIn Profile" class="icon"
+             onclick="location.href='https://www.linkedin.com/in/atharvdeo/'" />
+        <img src="github.png" alt="My GitHub Profile" class="icon"
+             onclick="location.href='https://github.com/AtharvDeoGH'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="about-pic.png" alt="Profile Picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="experience.png" alt="Experience" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ Years <br />Data Analyst</p>
+          </div>
+          <div class="details-container">
+            <img src="education.png" alt="Education" class="icon" />
+            <h3>Education</h3>
+            <p>Master's of Science in Business Analytics <br />(Concentration in Finance)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Data-driven analyst with 3+ years of experience across finance, operations, and product functions.
+            Skilled in Python, SQL, Tableau, and Microsoft Excel to deliver actionable insights, optimize
+            processes, and support strategic decision-making. Proven track record of building products and
+            fulfilling end-to-end data needs for startups while collaborating across multiple functions of the business.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+
+  <!-- ===== EXPERIENCE (now 3 tighter boxes) ===== -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <!-- Box 1 -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages & Tools</h2>
+          <div class="article-container">
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>SQL</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Python</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Tableau</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Power BI</h3><p>Experienced/p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>R</h3><p>Intermediate</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Visual Basic</h3><p>Basic</p></div></article>
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages & Tools</h2>
+          <div class="article-container">
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Microsoft Excel</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Asana</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Salesforce</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Git</h3><p>Intermediate</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Jira</h3><p>Intermediate</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>AWS</h3><p>Intermediate</p></div></article>
+          </div>
+        </div>
+
+        <!-- Box 3 (new) -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Fundamentals</h2>
+          <div class="article-container">
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Financial Modeling</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Portfolio Management</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Database Management</h3><p>Experienced</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Predective Modeling</h3><p>Intermediate</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Time Series Forecasting</h3><p>Intermediate</p></div></article>
+            <article><img src="checkmark.png" alt="" class="icon"/><div><h3>Data Engineering</h3><p>Intermediate</p></div></article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow"
+         onclick="location.href='#projects'"/>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="churn-xgb.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Customer Churn Analysis</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/customer-churn-xgboost'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/customer-churn-xgboost/blob/1e1ac15754f044ad96e8a5a1f0aa4b79c85b28a5/reports%3Acustomer-churn-xgb.pptx'">Presentation</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="wildfire-risk-analysis.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Wildfire Risk Analysis</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/precisely_fire_predictor'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/precisely_fire_predictor/blob/main/reports%3AWildfire_Risk_Analysis_Report.pdf'">Report</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="navi_clustrering.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Navi Broadband Plan Predictor</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/navi-clustering-segmentation'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/navi-clustering-segmentation/blob/main/reports%3ANavi%20Presentation.pdf'">Presentation</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="heart-disease-prediction.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Heart Disease Prediction</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/heart-disease-prediction'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AtharvDeoGH/heart-disease-prediction/blob/a8fa776237943933f4f02993befa60d8380ad312/reports%3AExecutive%20Summary.pptx'">Presentation</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="project-1.png" alt="Project 5" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Five</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="project-2.png" alt="Project 6" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Six</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow"
+         onclick="location.href='#contact'"/>
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:atharv.deo7@gmail.com">atharv.deo7@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/atharvdeo/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Atharv Vinay Deo. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

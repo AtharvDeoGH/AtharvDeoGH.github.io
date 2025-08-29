@@ -1,0 +1,7 @@
+function togglemenu() {
+  const menu = document.querySelector('#hamburger-nav .menu-links');
+  const icon = document.querySelector('#hamburger-nav .hamburger-icon');
+  if (!menu || !icon) return;
+  menu.classList.toggle('open');
+  icon.classList.toggle('open');
+}
